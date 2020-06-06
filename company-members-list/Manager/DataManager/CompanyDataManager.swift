@@ -8,20 +8,20 @@
 
 import Foundation
 
-protocol CompanyDataManagerProtocol {
+protocol CompanyDataManagerProtocol: AnyObject {
     func fetchCompanies(completionHandler: @escaping (Result<[Company], NetworkError>) -> Void)
     func fetchMembers(completionHandler: @escaping (Result<[Member], NetworkError>) -> Void)
 
-    var companies: [Company] { get }
-    var members: [Member] { get }
+    var companies: [Company] { get set }
+    var members: [Member] { get set }
 }
 
 class CompanyDataManager: CompanyDataManagerProtocol {
     static let shared = CompanyDataManager()
     private let service: CompanyServiceProtocol
     private var isFetching = false
-    private (set) var companies = [Company]()
-    private (set) var members = [Member]()
+    var companies = [Company]()
+    var members = [Member]()
     private var activeMemberCallBacks = [(Result<[Member], NetworkError>) -> Void]()
 
     init(service: CompanyServiceProtocol = CompanyServiceService()) {

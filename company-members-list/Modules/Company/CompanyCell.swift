@@ -15,10 +15,6 @@ private struct Constants {
     static let logoDimention: CGFloat = 80
 }
 
-protocol CompanyCellDelegate: AnyObject {
-    func companyCellDidTapWebsiteButton(_ cell: CompanyCell)
-}
-
 class CompanyCell: UITableViewCell {
     private let nameLabel = UILabel()
     private let logoImageView = UIImageView()
@@ -27,7 +23,6 @@ class CompanyCell: UITableViewCell {
     private let followButton = FollowButton(type: .system)
     private let favoriteButton = FavoriteButton(type: .system)
     private (set) var company: Company?
-    weak var delegate: CompanyCellDelegate?
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -63,10 +58,6 @@ class CompanyCell: UITableViewCell {
             $0.clipsToBounds = true
         }
 
-        websiteButton.style {
-            $0.addTarget(self, action: #selector(webButtonTapped), for: .touchUpInside)
-        }
-
         followButton.style {
             $0.addTarget(self, action: #selector(followButtonTapped), for: .touchUpInside)
         }
@@ -96,10 +87,6 @@ class CompanyCell: UITableViewCell {
         descriptionLabel.Leading == nameLabel.Leading
         descriptionLabel.Top == websiteButton.Bottom
         descriptionLabel.trailing(CGFloat.sidePadding).bottom(CGFloat.sidePadding)
-    }
-
-    @objc private func webButtonTapped() {
-        delegate?.companyCellDidTapWebsiteButton(self)
     }
 
     @objc private func followButtonTapped(_ sender: FollowButton) {

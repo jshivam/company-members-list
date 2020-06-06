@@ -17,18 +17,21 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let companyController = UINavigationController(
-            rootViewController: CompanyListController(viewModel: CompanyListViewModel())
-        )
+        let companyController:  UINavigationController  = {
+            let viewModel = CompanyListViewModel()
+            let controller = CompanyListController(viewModel: viewModel)
+            viewModel.delegate = controller
+            return UINavigationController(rootViewController: controller)
+        }()
 
         let memberConroller = UINavigationController(
             rootViewController: MemberListController(viewModel: MemberListViewModel())
         )
-        
+
         setViewControllers([companyController, memberConroller], animated: false)
 
-        companyController.tabBarItem = UITabBarItem(title: Constants.companyTitle, image: nil, tag: 0)
-        memberConroller.tabBarItem = UITabBarItem(title: Constants.memberTitle, image: nil, tag: 1)
+        companyController.tabBarItem = UITabBarItem(title: Constants.companyTitle, image: #imageLiteral(resourceName: "company"), tag: 0)
+        memberConroller.tabBarItem = UITabBarItem(title: Constants.memberTitle, image: #imageLiteral(resourceName: "employee"), tag: 1)
 
     }
 }
