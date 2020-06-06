@@ -7,9 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A030CB63248BC5DC00998829 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = A030CB62248BC5DC00998829 /* Toast */; };
+		A030CB65248BC68F00998829 /* TableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030CB64248BC68F00998829 /* TableViewProtocol.swift */; };
+		A030CB67248BE62F00998829 /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030CB66248BE62F00998829 /* FollowButton.swift */; };
+		A030CB69248BE92D00998829 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030CB68248BE92D00998829 /* FavoriteButton.swift */; };
 		A03A1F1D248B8B9700ACBBAB /* CompanyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F1C248B8B9700ACBBAB /* CompanyDataManager.swift */; };
-		A03A1F20248B953500ACBBAB /* FetchRequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F1F248B953500ACBBAB /* FetchRequestStatus.swift */; };
 		A03A1F23248B96F100ACBBAB /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = A03A1F22248B96F100ACBBAB /* Stevia */; };
+		A03A1F25248B9C5100ACBBAB /* CompanyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F24248B9C5100ACBBAB /* CompanyListViewModel.swift */; };
+		A03A1F3A248BB8FB00ACBBAB /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F28248BB8FB00ACBBAB /* Toast.swift */; };
+		A03A1F3B248BB8FB00ACBBAB /* FetchRequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F2A248BB8FB00ACBBAB /* FetchRequestStatus.swift */; };
+		A03A1F3C248BB8FB00ACBBAB /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F2C248BB8FB00ACBBAB /* BaseController.swift */; };
+		A03A1F3D248BB8FB00ACBBAB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F2E248BB8FB00ACBBAB /* UIView+Extensions.swift */; };
+		A03A1F40248BB8FB00ACBBAB /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F31248BB8FB00ACBBAB /* UITableView+Extensions.swift */; };
+		A03A1F41248BB8FB00ACBBAB /* FloatingPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F32248BB8FB00ACBBAB /* FloatingPoint+Extensions.swift */; };
+		A03A1F44248BB8FB00ACBBAB /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F36248BB8FB00ACBBAB /* LoaderView.swift */; };
+		A03A1F45248BB8FB00ACBBAB /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F38248BB8FB00ACBBAB /* ViewModelProtocol.swift */; };
+		A03A1F48248BBA8500ACBBAB /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F47248BBA8500ACBBAB /* CompanyCell.swift */; };
 		A0480BD2248B6E6C00BDF70F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0480BD1248B6E6C00BDF70F /* AppDelegate.swift */; };
 		A0480BD6248B6E6C00BDF70F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0480BD5248B6E6C00BDF70F /* TabBarController.swift */; };
 		A0480BDB248B6E7600BDF70F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0480BDA248B6E7600BDF70F /* Assets.xcassets */; };
@@ -40,8 +53,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A030CB64248BC68F00998829 /* TableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProtocol.swift; sourceTree = "<group>"; };
+		A030CB66248BE62F00998829 /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
+		A030CB68248BE92D00998829 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		A03A1F1C248B8B9700ACBBAB /* CompanyDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDataManager.swift; sourceTree = "<group>"; };
-		A03A1F1F248B953500ACBBAB /* FetchRequestStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequestStatus.swift; sourceTree = "<group>"; };
+		A03A1F24248B9C5100ACBBAB /* CompanyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListViewModel.swift; sourceTree = "<group>"; };
+		A03A1F28248BB8FB00ACBBAB /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		A03A1F2A248BB8FB00ACBBAB /* FetchRequestStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchRequestStatus.swift; sourceTree = "<group>"; };
+		A03A1F2C248BB8FB00ACBBAB /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		A03A1F2E248BB8FB00ACBBAB /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A03A1F31248BB8FB00ACBBAB /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		A03A1F32248BB8FB00ACBBAB /* FloatingPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Extensions.swift"; sourceTree = "<group>"; };
+		A03A1F36248BB8FB00ACBBAB /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		A03A1F38248BB8FB00ACBBAB /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		A03A1F47248BBA8500ACBBAB /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
 		A0480BCE248B6E6C00BDF70F /* company-members-list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "company-members-list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0480BD1248B6E6C00BDF70F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0480BD5248B6E6C00BDF70F /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -70,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A030CB63248BC5DC00998829 /* Toast in Frameworks */,
 				A03A1F23248B96F100ACBBAB /* Stevia in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,12 +118,70 @@
 			path = DataManager;
 			sourceTree = "<group>";
 		};
-		A03A1F1E248B952300ACBBAB /* Enums */ = {
+		A03A1F26248BB8FB00ACBBAB /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				A03A1F1F248B953500ACBBAB /* FetchRequestStatus.swift */,
+				A03A1F27248BB8FB00ACBBAB /* Toast */,
+				A03A1F29248BB8FB00ACBBAB /* Enums */,
+				A03A1F2B248BB8FB00ACBBAB /* Controller */,
+				A03A1F2D248BB8FB00ACBBAB /* Extensions */,
+				A03A1F33248BB8FB00ACBBAB /* Views */,
+				A03A1F37248BB8FB00ACBBAB /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A03A1F27248BB8FB00ACBBAB /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				A03A1F28248BB8FB00ACBBAB /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		A03A1F29248BB8FB00ACBBAB /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A03A1F2A248BB8FB00ACBBAB /* FetchRequestStatus.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		A03A1F2B248BB8FB00ACBBAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A03A1F2C248BB8FB00ACBBAB /* BaseController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A03A1F2D248BB8FB00ACBBAB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A03A1F2E248BB8FB00ACBBAB /* UIView+Extensions.swift */,
+				A03A1F31248BB8FB00ACBBAB /* UITableView+Extensions.swift */,
+				A03A1F32248BB8FB00ACBBAB /* FloatingPoint+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A03A1F33248BB8FB00ACBBAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A03A1F36248BB8FB00ACBBAB /* LoaderView.swift */,
+				A030CB66248BE62F00998829 /* FollowButton.swift */,
+				A030CB68248BE92D00998829 /* FavoriteButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A03A1F37248BB8FB00ACBBAB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A03A1F38248BB8FB00ACBBAB /* ViewModelProtocol.swift */,
+				A030CB64248BC68F00998829 /* TableViewProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		A0480BC5248B6E6C00BDF70F = {
@@ -121,7 +205,7 @@
 		A0480BD0248B6E6C00BDF70F /* company-members-list */ = {
 			isa = PBXGroup;
 			children = (
-				A03A1F1E248B952300ACBBAB /* Enums */,
+				A03A1F26248BB8FB00ACBBAB /* Common */,
 				A066AFB5248B828D007AEE45 /* Manager */,
 				A0480BF5248B704E00BDF70F /* Modules */,
 				A0480BF3248B6FD200BDF70F /* AppDelegate */,
@@ -172,7 +256,9 @@
 			isa = PBXGroup;
 			children = (
 				A066AFB1248B74C9007AEE45 /* CompanyListController.swift */,
+				A03A1F24248B9C5100ACBBAB /* CompanyListViewModel.swift */,
 				A066AFCB248B834F007AEE45 /* Company.swift */,
+				A03A1F47248BBA8500ACBBAB /* CompanyCell.swift */,
 			);
 			path = Company;
 			sourceTree = "<group>";
@@ -267,6 +353,7 @@
 			name = "company-members-list";
 			packageProductDependencies = (
 				A03A1F22248B96F100ACBBAB /* Stevia */,
+				A030CB62248BC5DC00998829 /* Toast */,
 			);
 			productName = "company-members-list";
 			productReference = A0480BCE248B6E6C00BDF70F /* company-members-list.app */;
@@ -320,6 +407,7 @@
 			mainGroup = A0480BC5248B6E6C00BDF70F;
 			packageReferences = (
 				A03A1F21248B96F000ACBBAB /* XCRemoteSwiftPackageReference "Stevia" */,
+				A030CB61248BC5DC00998829 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = A0480BCF248B6E6C00BDF70F /* Products */;
 			projectDirPath = "";
@@ -357,19 +445,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0480BD6248B6E6C00BDF70F /* TabBarController.swift in Sources */,
+				A03A1F3A248BB8FB00ACBBAB /* Toast.swift in Sources */,
+				A03A1F44248BB8FB00ACBBAB /* LoaderView.swift in Sources */,
 				A066AFC7248B82D7007AEE45 /* NetworkError.swift in Sources */,
+				A03A1F3B248BB8FB00ACBBAB /* FetchRequestStatus.swift in Sources */,
 				A066AFC4248B82D7007AEE45 /* CacheManager.swift in Sources */,
+				A03A1F41248BB8FB00ACBBAB /* FloatingPoint+Extensions.swift in Sources */,
 				A03A1F1D248B8B9700ACBBAB /* CompanyDataManager.swift in Sources */,
+				A03A1F40248BB8FB00ACBBAB /* UITableView+Extensions.swift in Sources */,
+				A03A1F25248B9C5100ACBBAB /* CompanyListViewModel.swift in Sources */,
 				A066AFB4248B74E5007AEE45 /* MemberListController.swift in Sources */,
 				A066AFCA248B82D7007AEE45 /* EndPoint.swift in Sources */,
 				A066AFC6248B82D7007AEE45 /* NetworkManager.swift in Sources */,
-				A03A1F20248B953500ACBBAB /* FetchRequestStatus.swift in Sources */,
+				A03A1F3C248BB8FB00ACBBAB /* BaseController.swift in Sources */,
+				A03A1F45248BB8FB00ACBBAB /* ViewModelProtocol.swift in Sources */,
 				A0480BD2248B6E6C00BDF70F /* AppDelegate.swift in Sources */,
+				A03A1F3D248BB8FB00ACBBAB /* UIView+Extensions.swift in Sources */,
 				A066AFC5248B82D7007AEE45 /* ImageDownloader.swift in Sources */,
 				A066AFC9248B82D7007AEE45 /* CompanyServiceProtocol.swift in Sources */,
+				A03A1F48248BBA8500ACBBAB /* CompanyCell.swift in Sources */,
 				A066AFD0248B8478007AEE45 /* Member.swift in Sources */,
+				A030CB69248BE92D00998829 /* FavoriteButton.swift in Sources */,
 				A066AFB2248B74C9007AEE45 /* CompanyListController.swift in Sources */,
 				A066AFC8248B82D7007AEE45 /* BaseService.swift in Sources */,
+				A030CB65248BC68F00998829 /* TableViewProtocol.swift in Sources */,
+				A030CB67248BE62F00998829 /* FollowButton.swift in Sources */,
 				A066AFCC248B834F007AEE45 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +625,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YYU9SVC7P9;
 				INFOPLIST_FILE = "company-members-list/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,6 +644,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YYU9SVC7P9;
 				INFOPLIST_FILE = "company-members-list/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -631,6 +733,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A030CB61248BC5DC00998829 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
 		A03A1F21248B96F000ACBBAB /* XCRemoteSwiftPackageReference "Stevia" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/freshOS/Stevia.git";
@@ -642,6 +752,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A030CB62248BC5DC00998829 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A030CB61248BC5DC00998829 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
 		A03A1F22248B96F100ACBBAB /* Stevia */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A03A1F21248B96F000ACBBAB /* XCRemoteSwiftPackageReference "Stevia" */;

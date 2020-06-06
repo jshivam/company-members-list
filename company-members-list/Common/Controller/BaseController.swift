@@ -1,5 +1,5 @@
 //
-//  MemberListController.swift
+//  BaseController.swift
 //  company-members-list
 //
 //  Created by Shivam Jaiswal on 06/06/20.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class MemberListController: UITableViewController {
-
+class BaseController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Mem"
-        view.backgroundColor = .magenta
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        view.backgroundColor = .white
     }
 }

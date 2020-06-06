@@ -17,7 +17,10 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let companyController = UINavigationController(rootViewController: CompanyListController())
+        let companyController = UINavigationController(
+            rootViewController: CompanyListController(viewModel: CompanyListViewModel())
+        )
+
         let memberConroller = UINavigationController.init(rootViewController: MemberListController())
         setViewControllers([companyController, memberConroller], animated: false)
 

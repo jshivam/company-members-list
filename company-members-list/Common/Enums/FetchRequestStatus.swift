@@ -12,3 +12,4 @@ enum FetchRequestStatus {
     case fetched
     case error(NetworkError)
 }
+

@@ -11,6 +11,9 @@ import Foundation
 protocol CompanyDataManagerProtocol {
     func fetchCompanies(completionHandler: @escaping (Result<[Company], NetworkError>) -> Void)
     func fetchMembers(completionHandler: @escaping (Result<[Member], NetworkError>) -> Void)
+
+    var companies: [Company] { get }
+    var members: [Member] { get }
 }
 
 class CompanyDataManager: CompanyDataManagerProtocol {

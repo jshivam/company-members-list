@@ -16,6 +16,7 @@ class Company: Codable {
     let website: URL
     let members: [Member]
     var isfavorite = false
+    var isfollwing = false
 
     enum CodingKeys: String, CodingKey {
         case id = "_id"
