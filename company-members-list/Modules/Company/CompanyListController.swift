@@ -34,6 +34,7 @@ class CompanyListController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = viewModel.viewTitle
+        navigationController?.navigationBar.prefersLargeTitles = true
 
         let sort = UIBarButtonItem(title: Constants.sortText,
                                    style: .plain,
@@ -123,7 +124,7 @@ extension CompanyListController: UISearchResultsUpdating {
     }
 }
 
-extension CompanyListController: CompanyListViewModelDelegate {
+extension CompanyListController: SearchListDelegate {
     func isFiltering() -> Bool {
         return searchController.isActive && !isSearchBarEmpty()
     }

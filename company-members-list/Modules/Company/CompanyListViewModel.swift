@@ -13,7 +13,7 @@ private struct Constants {
     static let sortText = "Sort"
 }
 
-protocol CompanyListViewModelDelegate: AnyObject {
+protocol SearchListDelegate: AnyObject {
     func isFiltering() -> Bool
     func isSearchBarEmpty() -> Bool
 }
@@ -31,7 +31,7 @@ protocol CompanyListViewModelProtocol: ViewModelProtocol {
 class CompanyListViewModel: CompanyListViewModelProtocol {
     private let dataManager: CompanyDataManagerProtocol
     var filteredCompanies = [Company]()
-    weak var delegate: CompanyListViewModelDelegate?
+    weak var searchDelegate: SearchListDelegate?
 
     init(dataManager: CompanyDataManagerProtocol = CompanyDataManager.shared) {
         self.dataManager = dataManager
@@ -53,12 +53,12 @@ class CompanyListViewModel: CompanyListViewModelProtocol {
     }
 
     func numberOfItems(inSection section: Int) -> Int {
-        guard let delegate = delegate else { return dataManager.companies.count }
+        guard let delegate = searchDelegate else { return dataManager.companies.count }
         return delegate.isFiltering() ? filteredCompanies.count : dataManager.companies.count
     }
 
     func item(at indexPath: IndexPath) -> Company {
-        guard let delegate = delegate else { return dataManager.companies[indexPath.row] }
+        guard let delegate = searchDelegate else { return dataManager.companies[indexPath.row] }
         return delegate.isFiltering() ? filteredCompanies[indexPath.row] : dataManager.companies[indexPath.row]
     }
 

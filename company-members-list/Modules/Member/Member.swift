@@ -26,7 +26,15 @@ class Member: Codable {
 }
 
 extension Member {
-    struct Name: Codable {
+    struct Name: Codable, Comparable {
+        static func < (lhs: Member.Name, rhs: Member.Name) -> Bool {
+            if lhs.first == rhs.first {
+                return lhs.last < rhs.last
+            } else {
+                return lhs.first < rhs.first
+            }
+        }
+
         let first: String
         let last: String
     }

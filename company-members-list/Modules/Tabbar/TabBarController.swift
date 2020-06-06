@@ -20,13 +20,16 @@ class TabBarController: UITabBarController {
         let companyController:  UINavigationController  = {
             let viewModel = CompanyListViewModel()
             let controller = CompanyListController(viewModel: viewModel)
-            viewModel.delegate = controller
+            viewModel.searchDelegate = controller
             return UINavigationController(rootViewController: controller)
         }()
 
-        let memberConroller = UINavigationController(
-            rootViewController: MemberListController(viewModel: MemberListViewModel())
-        )
+        let memberConroller:  UINavigationController  = {
+            let viewModel = MemberListViewModel()
+            let controller = MemberListController(viewModel: viewModel)
+            viewModel.searchDelegate = controller
+            return UINavigationController(rootViewController: controller)
+        }()
 
         setViewControllers([companyController, memberConroller], animated: false)
 
