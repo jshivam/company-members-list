@@ -1,28 +1,52 @@
 # company-members-list
 ---
 
-## Overview
-A club contains companies and each company has members attached to it.
-Create an application that will display the list of companies and list of members in the club.
+To run this project, please follow following steps:
 
-## Goals
-1. Fetch a list of [company and members](https://next.json-generator.com/api/json/get/Vk-LhK44U) (each member belongs to a company).
-2. Items must contain: 
-   • Company: name, logo, website, company description
-   • Member: name, age, phone, email, age
-3. Each list should appear in a separate view.
+1. Open the project and wait for Swift Pakage Dependencies to download all dependencies.
 
-### Members List:
-1. List must support the ability to sort by age / name.
-2. Search by member name.
-3. Mark a member as favorite.
+# Requirements
 
-### Company List:
-1. List must support the ability to sort by name.
-2. Search by company name.
-3. Mark a company as favorite.
-4. Follow a company.
+- XCode 11
+- MAC 10.15
 
-_UI/UX must be user friendly and must follow the Apple Human Interface Design Guidelines._
+# Supported iOS Version
 
-_Please make sure your progress is properly conveyed through git commit history ._
+- iOS 13.0 +
+
+# Language 
+
+- Swift 5.0
+
+
+# App Version
+
+- 1.0
+
+# Design Patterns
+
+1. MVVM
+2. Adapter design pattern
+3. Facade design pattern
+
+# Caching
+1. For Image caching, app is using URLCache & NSCache.
+
+# Assumptions        
+1.  Supported mobile platforms are iOS (13.x)        
+2.  Device support - all devices    
+
+# Swift Package Manager
+- Toast-Swift
+- Stevia Autolayout
+
+# Autolayouting
+App used Stevia for setting up contraints
+
+# ScreenShots
+![ScreenShot](https://github.com/jshivam/company-members-list/blob/master/screenshots/ss.png)
+
+# TODO / Improvements
+-  Unit test cases
+-  Improvise ImageDownloader's image caching logic
+
