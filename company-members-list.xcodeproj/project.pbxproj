@@ -11,6 +11,8 @@
 		A030CB65248BC68F00998829 /* TableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030CB64248BC68F00998829 /* TableViewProtocol.swift */; };
 		A030CB67248BE62F00998829 /* FollowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030CB66248BE62F00998829 /* FollowButton.swift */; };
 		A030CB69248BE92D00998829 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030CB68248BE92D00998829 /* FavoriteButton.swift */; };
+		A030CB6B248BF98800998829 /* MemberListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030CB6A248BF98800998829 /* MemberListViewModel.swift */; };
+		A030CB6D248BFB6C00998829 /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030CB6C248BFB6C00998829 /* MemberCell.swift */; };
 		A03A1F1D248B8B9700ACBBAB /* CompanyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F1C248B8B9700ACBBAB /* CompanyDataManager.swift */; };
 		A03A1F23248B96F100ACBBAB /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = A03A1F22248B96F100ACBBAB /* Stevia */; };
 		A03A1F25248B9C5100ACBBAB /* CompanyListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F24248B9C5100ACBBAB /* CompanyListViewModel.swift */; };
@@ -56,6 +58,8 @@
 		A030CB64248BC68F00998829 /* TableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProtocol.swift; sourceTree = "<group>"; };
 		A030CB66248BE62F00998829 /* FollowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowButton.swift; sourceTree = "<group>"; };
 		A030CB68248BE92D00998829 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		A030CB6A248BF98800998829 /* MemberListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewModel.swift; sourceTree = "<group>"; };
+		A030CB6C248BFB6C00998829 /* MemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
 		A03A1F1C248B8B9700ACBBAB /* CompanyDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDataManager.swift; sourceTree = "<group>"; };
 		A03A1F24248B9C5100ACBBAB /* CompanyListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyListViewModel.swift; sourceTree = "<group>"; };
 		A03A1F28248BB8FB00ACBBAB /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
@@ -267,7 +271,9 @@
 			isa = PBXGroup;
 			children = (
 				A066AFB3248B74E5007AEE45 /* MemberListController.swift */,
+				A030CB6A248BF98800998829 /* MemberListViewModel.swift */,
 				A066AFCF248B8478007AEE45 /* Member.swift */,
+				A030CB6C248BFB6C00998829 /* MemberCell.swift */,
 			);
 			path = Member;
 			sourceTree = "<group>";
@@ -444,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A030CB6B248BF98800998829 /* MemberListViewModel.swift in Sources */,
 				A0480BD6248B6E6C00BDF70F /* TabBarController.swift in Sources */,
 				A03A1F3A248BB8FB00ACBBAB /* Toast.swift in Sources */,
 				A03A1F44248BB8FB00ACBBAB /* LoaderView.swift in Sources */,
@@ -461,6 +468,7 @@
 				A03A1F45248BB8FB00ACBBAB /* ViewModelProtocol.swift in Sources */,
 				A0480BD2248B6E6C00BDF70F /* AppDelegate.swift in Sources */,
 				A03A1F3D248BB8FB00ACBBAB /* UIView+Extensions.swift in Sources */,
+				A030CB6D248BFB6C00998829 /* MemberCell.swift in Sources */,
 				A066AFC5248B82D7007AEE45 /* ImageDownloader.swift in Sources */,
 				A066AFC9248B82D7007AEE45 /* CompanyServiceProtocol.swift in Sources */,
 				A03A1F48248BBA8500ACBBAB /* CompanyCell.swift in Sources */,

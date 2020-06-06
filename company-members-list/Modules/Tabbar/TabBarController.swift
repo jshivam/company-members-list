@@ -21,7 +21,10 @@ class TabBarController: UITabBarController {
             rootViewController: CompanyListController(viewModel: CompanyListViewModel())
         )
 
-        let memberConroller = UINavigationController.init(rootViewController: MemberListController())
+        let memberConroller = UINavigationController(
+            rootViewController: MemberListController(viewModel: MemberListViewModel())
+        )
+        
         setViewControllers([companyController, memberConroller], animated: false)
 
         companyController.tabBarItem = UITabBarItem(title: Constants.companyTitle, image: nil, tag: 0)

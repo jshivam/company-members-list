@@ -25,6 +25,7 @@ class CompanyListController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = viewModel.viewTitle
+        navigationController?.navigationBar.prefersLargeTitles = true
 
         tableView.style {
             $0.estimatedRowHeight = 40
@@ -69,7 +70,7 @@ extension CompanyListController {
 
 extension CompanyListController: CompanyCellDelegate {
     func companyCellDidTapWebsiteButton(_ cell: CompanyCell) {
-        
+
     }
 }
 
