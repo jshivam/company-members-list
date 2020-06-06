@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A03A1F1D248B8B9700ACBBAB /* CompanyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F1C248B8B9700ACBBAB /* CompanyDataManager.swift */; };
 		A03A1F20248B953500ACBBAB /* FetchRequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A1F1F248B953500ACBBAB /* FetchRequestStatus.swift */; };
+		A03A1F23248B96F100ACBBAB /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = A03A1F22248B96F100ACBBAB /* Stevia */; };
 		A0480BD2248B6E6C00BDF70F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0480BD1248B6E6C00BDF70F /* AppDelegate.swift */; };
 		A0480BD6248B6E6C00BDF70F /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0480BD5248B6E6C00BDF70F /* TabBarController.swift */; };
 		A0480BDB248B6E7600BDF70F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0480BDA248B6E7600BDF70F /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03A1F23248B96F100ACBBAB /* Stevia in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,8 +235,8 @@
 		A066AFBF248B82D7007AEE45 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A066AFC0248B82D7007AEE45 /* BaseService.swift */,
 				A066AFC1248B82D7007AEE45 /* Company */,
+				A066AFC0248B82D7007AEE45 /* BaseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -263,6 +265,9 @@
 			dependencies = (
 			);
 			name = "company-members-list";
+			packageProductDependencies = (
+				A03A1F22248B96F100ACBBAB /* Stevia */,
+			);
 			productName = "company-members-list";
 			productReference = A0480BCE248B6E6C00BDF70F /* company-members-list.app */;
 			productType = "com.apple.product-type.application";
@@ -313,6 +318,9 @@
 				Base,
 			);
 			mainGroup = A0480BC5248B6E6C00BDF70F;
+			packageReferences = (
+				A03A1F21248B96F000ACBBAB /* XCRemoteSwiftPackageReference "Stevia" */,
+			);
 			productRefGroup = A0480BCF248B6E6C00BDF70F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -621,6 +629,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A03A1F21248B96F000ACBBAB /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A03A1F22248B96F100ACBBAB /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A03A1F21248B96F000ACBBAB /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0480BC6248B6E6C00BDF70F /* Project object */;
 }
